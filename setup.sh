@@ -11,8 +11,8 @@ TM_SIZE="${TM_SIZE:-512000}"
     echo -e "${TM_PW}\n${TM_PW}" | smbpasswd -s -a "${TM_USER}"
 
 ## timemachine location
-if [ ! -d "/timemachine" ]; then
-    mkdir "/timemachine"
+if [ ! -d "/data/timemachine" ]; then
+    mkdir -p "/data/timemachine"
 fi
 
 
